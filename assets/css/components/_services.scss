@@ -1,0 +1,63 @@
+@import "../css-tree";
+@import "../variable";
+@import "../functions";
+@import "../default-css";
+/*
+    ==============
+       SERVICES
+    ==============
+*/
+.mh-service .mh-service-item {
+  padding: 20px;
+  border-radius: 4px;
+  width:100%;
+  position: relative;
+  height: 220px;
+}
+
+.mh-service-item-content{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.mh-service-item-content .fa {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 16px;
+}
+
+.mh-service-item-content .fa.purple-color {
+  color: #9774fa;
+}
+
+.mh-service-item-content .fa.iron-color {
+  color: #ed7256;
+}
+
+.mh-service-item-content .fa.sky-color {
+  color: #2796e2;
+}
+
+.mh-service-item-content h4 {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.mh-service-item-content ul{
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  list-style-type: none;
+
+}
+
+.mh-service-item-content p {
+  width:100%;
+};
+
+.mh-service-item-content p span{
+  margin: 0px 3px 0px 3px;
+  font-weight: bold;
+}

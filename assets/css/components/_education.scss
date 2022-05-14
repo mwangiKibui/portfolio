@@ -1,0 +1,64 @@
+@import "../css-tree";
+@import "../variable";
+@import "../functions";
+@import "../default-css";
+
+/*
+    ==============
+      EDUCATION
+    ==============
+*/
+.mh-education {
+  padding-right: 30px;
+}
+
+.mh-work {
+  padding-left: 30px;
+  h3 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 60px;
+  }
+  .mh-experience-deatils {
+    .mh-work-item {
+      margin-bottom: 30px;
+      padding: 20px 30px;
+      border-radius: 4px;
+      @include box-shadow($shadows);
+      &:hover {
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      h4 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        a {
+          color: $main-color;
+        }
+      }
+      .mh-eduyear {
+        margin: 10px 0;
+        color: $main-color;
+      }
+      span {
+        font-size: 12px;
+        line-height: 22px;
+      }
+      .work-responsibility {
+        li {
+          font-size: 14px;
+          line-height: 23px;
+          margin: 2px 0;
+          .fa {
+            font-size: 10px;
+            line-height: 23px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

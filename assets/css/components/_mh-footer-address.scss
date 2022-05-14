@@ -1,0 +1,37 @@
+@import "../css-tree";
+@import "../variable";
+@import "../functions";
+@import "../default-css";
+/*
+    ============
+    Footer Address
+    ==============
+*/
+.mh-footer-address {
+  margin-bottom: 60px;
+  .mh-address-footer-item {
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    h4 {
+      margin-bottom: 20px;
+    }
+    address {
+      margin-bottom: 0;
+    }
+    .each-icon {
+      margin-bottom: 30px;
+      .fa {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+        border-radius: 50%;
+        line-height: 100px;
+        font-size: 20px;
+        border-color: $main-color;
+      }
+    }
+  }
+}

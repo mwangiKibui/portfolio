@@ -1,0 +1,17 @@
+@import "../css-tree";
+@import "../variable";
+@import "../functions";
+@import "../default-css";
+/*
+    ==============
+       MAP
+    ==============
+*/
+.mh-map {
+  padding: 0px;
+  margin-top: 10px;
+  #mh-map {
+    height: 400px;
+    width: 100%;
+  }
+}

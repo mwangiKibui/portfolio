@@ -1,0 +1,50 @@
+@import "../css-tree";
+@import "../variable";
+@import "../functions";
+@import "../default-css";
+
+/*
+    ==============
+      EXPERIENCES
+    ==============
+*/
+
+.mh-experince {
+  h3 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 60px;
+  }
+
+  .mh-education-deatils {
+    .mh-education-item {
+      margin-bottom: 30px;
+      padding: 26px 30px;
+      border-radius: 4px;
+      @include box-shadow($shadows);
+      &:last-child {
+        margin-bottom: 0;
+      }
+      h4 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        a {
+          font-style: italic;
+          margin-left: 4px;
+          color: $main-color;
+        }
+      }
+      .mh-eduyear {
+        margin: 10px 0;
+        color: $main-color;
+      }
+      p {
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

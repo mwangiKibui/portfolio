@@ -1,0 +1,32 @@
+@import "../css-tree";
+@import "../variable";
+@import "../functions";
+@import "../default-css";
+
+/*
+    ==============
+       MH VIDEO
+    ==============
+*/
+
+.mh-video {
+  .each-video {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    p {
+      margin-top: 20px;
+      padding: 0 160px;
+    }
+    .fa {
+      background-color: $white;
+      border-radius: 50%;
+      color: black;
+      height: 40px;
+      width: 40px;
+      margin-top: 20px;
+      line-height: 40px;
+      text-align: center;
+    }
+  }
+}

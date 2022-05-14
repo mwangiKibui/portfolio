@@ -1,0 +1,38 @@
+@import "../css-tree";
+@import "../variable";
+@import "../functions";
+@import "../default-css";
+
+/*
+====================
+    FOOTER 2
+====================
+*/
+
+.mh-footer-2 {
+  .form-control {
+    // @include box-shadow(0px, 0px, 1px, 0px, rgba($white, 0.2), false);
+    @include box-shadow($color-shadows-contact-2x);
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 20px;
+    height: 50px;
+    line-height: 50px;
+    &:focus {
+      // @include box-shadow(0px, 0px, 2px, 0px, rgba($white, 0.2), false);
+      @include box-shadow($color-shadows-contact-2x);
+      background-color: transparent;
+    }
+  }
+  .contact-message {
+    @include box-shadow($color-shadows-contact-2x);
+    &:focus {
+      // @include box-shadow(0px, 0px, 2px, 0px, rgba($white, 0.2), false);
+      @include box-shadow($color-shadows-contact-2x);
+      background-color: transparent;
+    }
+  }
+}
+.mh-copyright {
+  margin-top: 60px;
+}

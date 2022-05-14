@@ -1,0 +1,95 @@
+@import "../css-tree";
+@import "../variable";
+@import "../functions";
+@import "../default-css";
+
+/*
+    =================
+       TESTIMONIAL
+    =================
+*/
+
+.mh-testimonial {
+  &.mh-single-testimonial {
+    .mh-client-item {
+      p {
+        padding: 0 160px;
+        margin: 60px 0;
+      }
+      img {
+      }
+    }
+  }
+  &.mh-2-testimonial {
+    .mh-client-item {
+      p {
+        padding: 0 0px;
+        margin: 20px 0;
+      }
+      img {
+      }
+    }
+  }
+  .mh-client-item {
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+    padding: 30px;
+    border-radius: 4px;
+    @include box-shadow($shadows);
+    img {
+      width: inherit;
+      float: none;
+      margin: 0 auto;
+      border: 5px solid $main-color;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      border-radius: 50%;
+    }
+    p {
+      margin: 10px 0;
+      &::before {
+        content: open-quote;
+        margin-right: 6px;
+        font-size: 20px;
+      }
+      &::after {
+        content: close-quote;
+        margin-left: 6px;
+        font-size: 20px;
+      }
+    }
+    h4 {
+      font-size: 16px;
+      line-height: 25px;
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+    span {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  .each-client-item {
+    margin: 30px 20px;
+  }
+  .owl-controls .owl-nav {
+    display: none !important;
+  }
+  .owl-controls .owl-dots {
+    padding-left: 15px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .owl-controls .owl-dots .owl-dot {
+    height: 15px;
+    width: 15px;
+    border: 1px solid $main-color;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .owl-controls .owl-dots .owl-dot.active {
+    background-color: $main-color;
+  }
+}

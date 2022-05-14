@@ -1,0 +1,502 @@
+@import "../css-tree";
+@import "../variable";
+@import "../functions";
+@import "../default-css";
+
+/** 
+ * -----------------
+ * General CSS
+ * -----------------
+ */
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+.white-vertion {
+  &.black-bg {
+    background-color: $white;
+  }
+
+  .single-comment {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 20px 10px;
+  }
+
+  .blog-form-inner {
+    .contact-message,
+    .form-control {
+      -webkit-box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8),
+        0 0px 1px 1px rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0px 2px 0 rgba(74, 71, 71, 0.8),
+        0 0px 1px 1px rgba(241, 241, 241, 0.8);
+    }
+  }
+
+  .section-loader {
+    background: $white;
+  }
+  ::placeholder {
+    color: $black;
+  }
+  a {
+    color: $black;
+  }
+  h2 {
+    color: $black;
+  }
+  h3 {
+    color: $black;
+  }
+  h4 {
+    color: $black;
+  }
+  h5 {
+    color: $black;
+  }
+  h6 {
+    color: $black;
+  }
+  p {
+    color: $black;
+  }
+  address {
+    color: $black;
+  }
+  span {
+    color: $black;
+  }
+  ul li {
+    color: $black;
+  }
+  div {
+    color: $black;
+  }
+  .form-control {
+    color: $white;
+  }
+  .contact-message {
+    color: $white;
+  }
+  .nav-strict {
+    background-color: $white;
+  }
+  &.home-video {
+    .img-color-overlay {
+      background-color: rgba($white, 0.7);
+    }
+  }
+  .img-color-overlay {
+    background-color: rgba($white, 0.9);
+  }
+  .dark-bg {
+    background-color: $white;
+  }
+  .mh-home .mh-header-info .mh-promo span {
+    color: $white;
+  }
+  .mh-project-gallery .grid-item figure figcaption a {
+    color: $white;
+  }
+  .mh-project-gallery .grid-item figure figcaption .title {
+    color: $white;
+  }
+  .mh-project-gallery .grid-item figure figcaption .sub-title {
+    color: $white;
+  }
+  .mh-portfolio-modal {
+    background: $white;
+  }
+  .page-item {
+    &.active {
+      .page-link {
+        background-color: $white;
+        color: $main-color;
+      }
+    }
+    .page-link {
+      border-color: $black;
+    }
+  }
+  .navbar-toggler .icon,
+  .navbar-toggler .icon::after,
+  .navbar-toggler .icon::before {
+    background-color: $black;
+  }
+  .mh-header .navbar-nav li a {
+    color: $black;
+    opacity: 0.8;
+  }
+  .mh-home .mh-header-info .social-icon li .fa:hover {
+    background-color: $black;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  address,
+  span,
+  q {
+    opacity: 0.8;
+  }
+  .mh-header .navbar-nav li.active a {
+    padding-right: 0;
+    padding-left: 0;
+    border-color: $black;
+  }
+  .mh-header.nav-3 .navbar-nav li.active a {
+    border-color: transparent;
+  }
+
+  .mh-footer {
+    .form-control {
+      @include box-shadow($color-shadows-contact-w-2x);
+      color: $black;
+      &:focus {
+        @include box-shadow($color-shadows-contact-w-2x);
+      }
+    }
+    .contact-message {
+      @include box-shadow($color-shadows-contact-w-2x);
+      color: $black;
+      &:focus {
+        @include box-shadow($color-shadows-contact-w-2x);
+      }
+    }
+  }
+  .mh-footer-2 {
+    .form-control {
+      // @include box-shadow(0px, 0px, 1px, 0px, rgba($white, 0.2), false);
+      @include box-shadow($color-shadows-contact-w-2x);
+      &:focus {
+        // @include box-shadow(0px, 0px, 2px, 0px, rgba($white, 0.2), false);
+        @include box-shadow($color-shadows-contact-w-2x);
+      }
+    }
+    .contact-message {
+      @include box-shadow($color-shadows-contact-w-2x);
+      &:focus {
+        // @include box-shadow(0px, 0px, 2px, 0px, rgba($white, 0.2), false);
+        @include box-shadow($color-shadows-contact-w-2x);
+      }
+    }
+  }
+
+  .mh-blog .mh-blog-item .blog-inner h2 a {
+    color: $black-bg;
+  }
+
+  .shadow-1 {
+    box-shadow: 0px 10px 20px 4px #00000015;
+  }
+
+  .mh-pricing .mh-pricing {
+    box-shadow: 0px 10px 20px 4px #00000015;
+  }
+
+  .mh-blog .mh-blog-item {
+    box-shadow: 0px 10px 20px 4px #00000015;
+  }
+
+  .mh-experince .mh-education-deatils .mh-education-item {
+    box-shadow: 0px 10px 20px 4px #00000015;
+  }
+  .mh-work .mh-experience-deatils .mh-work-item {
+    box-shadow: 0px 10px 20px 4px #00000015;
+  }
+  .mh-testimonial .mh-client-item {
+    box-shadow: 0px 10px 20px 4px #00000015;
+  }
+
+  &.home-slider {
+    .mh-home .img-border {
+      border: 20px solid rgba(0, 0, 0, 0.52);
+    }
+  }
+
+  &.home-slider {
+    .mh-home .img-border {
+      border-color: rgba(0, 0, 0, 0.62);
+    }
+    .mh-home .hero-img img {
+      border-color: rgba(0, 0, 0, 0.4);
+    }
+    .img-color-overlay {
+      background-color: rgba(255, 247, 247, 0.6);
+    }
+  }
+
+  &.home-slider {
+    .mh-black-header {
+      .img-color-overlay {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      h2,
+      h4,
+      ul li,
+      a,
+      address {
+        color: #fff;
+      }
+    }
+  }
+  &.home-video {
+    .mh-black-header {
+      .img-color-overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      h2,
+      h4,
+      ul li,
+      a,
+      address {
+        color: #fff;
+        opacity: 0.9;
+      }
+    }
+  }
+  .mh-header.white-header {
+    &.nav-strict {
+      .navbar-nav li a {
+        color: #000;
+      }
+      .navbar-nav li.active a {
+        border-color: #000;
+      }
+    }
+    .navbar-nav li a {
+      color: #fff;
+      opacity: 0.9;
+    }
+
+    .navbar-nav li.active a {
+      border-color: #fff;
+    }
+  }
+}
+
+.dark-vertion {
+  opacity: 0.9;
+  &.black-bg {
+    background-color: #100e17;
+  }
+
+  .section-loader {
+    background: #100e17;
+  }
+  ::placeholder {
+    color: $white;
+  }
+  a {
+    color: $white;
+  }
+  h2 {
+    color: $white;
+  }
+  h3 {
+    color: $white;
+  }
+  h4 {
+    color: $white;
+  }
+  h5 {
+    color: $white;
+  }
+  h6 {
+    color: $white;
+  }
+  p {
+    color: $white;
+  }
+  address {
+    color: $white;
+  }
+  span {
+    color: $white;
+  }
+
+  div {
+    color: $white;
+  }
+  ul li {
+    color: $white;
+  }
+  .form-control {
+    color: $white;
+  }
+  .contact-message {
+    color: $white;
+  }
+  .nav-strict {
+    background-color: $black-bg;
+  }
+
+  // .mh-footer-address .mh-address-footer-item .each-icon .fa {
+  //     border-color: $white;
+  // }
+
+  &.home-video {
+    .img-color-overlay {
+      background-color: rgba($black, 0.7);
+    }
+  }
+  .img-color-overlay {
+    background-color: rgba($black, 0.9);
+  }
+  .mh-home .mh-header-info .social-icon li .fa:hover {
+    background-color: $white;
+  }
+  .page-item {
+    &.active {
+      .page-link {
+        background-color: $white;
+        border-color: $white;
+        color: $main-color;
+      }
+    }
+  }
+  .navbar-toggler .icon,
+  .navbar-toggler .icon::after,
+  .navbar-toggler .icon::before {
+    background-color: $white;
+  }
+  .mh-header .navbar-nav li.active a {
+    border-color: $white;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .mh-header.nav-3 .navbar-nav li.active a {
+    border-color: transparent;
+  }
+
+  .mh-footer {
+    .form-control {
+      @include box-shadow($color-shadows-contact-2x);
+      &:focus {
+        @include box-shadow($color-shadows-contact-2x);
+      }
+    }
+    .contact-message {
+      @include box-shadow($color-shadows-contact-2x);
+      &:focus {
+        @include box-shadow($color-shadows-contact-2x);
+      }
+    }
+  }
+  .mh-footer-2 {
+    .form-control {
+      // @include box-shadow(0px, 0px, 1px, 0px, rgba($white, 0.2), false);
+      @include box-shadow($color-shadows-contact-2x);
+      &:focus {
+        // @include box-shadow(0px, 0px, 2px, 0px, rgba($white, 0.2), false);
+        @include box-shadow($color-shadows-contact-2x);
+      }
+    }
+    .contact-message {
+      @include box-shadow($color-shadows-contact-2x);
+      &:focus {
+        // @include box-shadow(0px, 0px, 2px, 0px, rgba($white, 0.2), false);
+        @include box-shadow($color-shadows-contact-2x);
+      }
+    }
+  }
+
+  .mh-work .mh-experience-deatils .mh-work-item {
+    -webkit-box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1rem 0 3rem #000;
+  }
+  .mh-pricing .mh-pricing {
+    -webkit-box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1rem 0 3rem #000;
+  }
+  .mh-blog .mh-blog-item {
+    -webkit-box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1rem 0 3rem #000;
+  }
+  .mh-footer-address .mh-address-footer-item {
+    -webkit-box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1rem 0 3rem #000;
+  }
+  .mh-experince .mh-education-deatils .mh-education-item {
+    -webkit-box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1rem 0 3rem #000;
+  }
+  .mh-service .mh-service-item {
+    -webkit-box-shadow: -1rem 0 3rem #000;
+    box-shadow: -1rem 0 3rem #000;
+  }
+
+  .mh-home {
+    .hero-img {
+      img {
+        border: 20px solid rgba(0, 0, 0, 0.4);
+      }
+    }
+    .img-border {
+      border: 20px solid rgba(0, 0, 0, 0.9);
+    }
+  }
+  .candidatos .parcial .progressBar {
+    background: rgba(199, 198, 198, 0.6);
+  }
+  .mh-progress path:nth-child(1) {
+    stroke: rgba(255, 255, 255, 0.5);
+  }
+
+  &.home-slider {
+    .mh-home .img-border {
+      border-color: rgba(255, 255, 255, 0.52);
+    }
+    .mh-home .hero-img img {
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+
+.home-slider {
+  .mh-home .img-border {
+    border: 20px solid rgba(0, 0, 0, 0.52);
+  }
+  .img-color-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9;
+    position: relative;
+  }
+}
+
+.home-video {
+  .mh-home .img-border {
+    border: 20px solid rgba(0, 0, 0, 0.52);
+  }
+}
+
+.mh-rtl {
+  text-align: right;
+  .mh-work .mh-experience-deatils .mh-work-item .work-responsibility li .fa {
+    margin-left: 10px;
+  }
+  .mh-blog-post-info ul li strong {
+    margin-left: 6px;
+  }
+  .mh-footer .form-control {
+    text-align: right;
+  }
+  .mh-footer .contact-message {
+    text-align: right;
+  }
+}
